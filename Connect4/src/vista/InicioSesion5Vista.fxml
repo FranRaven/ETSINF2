@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.InicioSesion5Controller">
+   <center>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="245.0" prefWidth="466.0">
+         <center>
+            <GridPane prefHeight="167.0" prefWidth="408.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="163.39998779296874" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="379.199951171875" minWidth="10.0" prefWidth="279.4000122070312" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="94.79999389648438" minHeight="0.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="200.8" minHeight="10.0" prefHeight="45.000006103515624" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="246.7999938964844" minHeight="10.0" prefHeight="46.20001831054688" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="270.99999084472654" minHeight="10.0" prefHeight="82.19998168945312" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Usuario:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Contraseña:" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="usuariofxID" onAction="#fieldUsuario" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="noPuedefxID" textFill="RED" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <PasswordField fx:id="contraseñafxID" onAction="#fieldContraseña" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="542.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="cancelfxID" mnemonicParsing="false" onAction="#bCancel" text="Cancelar">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="jugarfxID" mnemonicParsing="false" onAction="#bJugar" text="Jugar">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+         <right>
+            <VBox alignment="CENTER" prefHeight="142.0" prefWidth="134.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="iniSesionfxID" mnemonicParsing="false" onAction="#bIniSesion" text="Iniciar Sesion" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="recuperarfxID" mnemonicParsing="false" onAction="#bRecuperar" prefHeight="50.0" prefWidth="100.0" text="Recuperar Contraseña" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </center>
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Jugador 1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin></HBox>
+   </top>
+</BorderPane>

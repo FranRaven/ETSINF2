@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ComprobacionCodigoController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.20001220703125" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.20001220703125" minWidth="10.0" prefWidth="300.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="128.60001220703126" minHeight="10.0" prefHeight="66.79999389648438" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="224.59997787475587" minHeight="10.0" prefHeight="44.99998779296875" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="224.59997787475587" minHeight="10.0" prefHeight="70.60001220703126" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="158.2000030517578" minHeight="10.0" prefHeight="158.00000610351563" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="aceptfxID" mnemonicParsing="false" onAction="#bAcept" text="Aceptar" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="contraseñafxID" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <TextField fx:id="codigofxID" onAction="#bCodigo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Codigo:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>
